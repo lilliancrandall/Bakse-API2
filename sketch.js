@@ -62,8 +62,7 @@ function mercY(lat) {
 
 function setup() {
     createCanvas(1604, 1512);
-    background(0);
-    image(mapimg, 0, 0);
+    background(250,133,133);
     translate(width / 2, height / 2);
     imageMode(CENTER);
 
@@ -89,10 +88,15 @@ function setup() {
 
         var d = map(mag, 0, 10, magmax, 180);
         
-        stroke(255,0,255);
-        fill(255, 0, 255, 200);
+        // stroke(251,173,212);
+        stroke(0);
+        fill(251,173,212, 200);
         ellipse(x, y, 18, 18);
-
+       textSize(95);
+        text('2018', 10, 30);
+        fill(247,92,171);
+        textSize(10);
+        text('EARTHQUAKE', x, y);
     }
 
 
